@@ -1,17 +1,14 @@
 import './ExpenseItem.css'
 
-function ExpenseItem() {
+function ExpenseItem(props: {date: Date, title: string, amount: number}) {
 
-    const expenseDate = new Date(2023, 4, 30); //This is just javascript and not react
-    const expenseTitle = 'Energy Bill';
-    const expenseAmount = 231.45;
-
+    //Being expenseDate is a javascript object we can use the toISOString() method to convert it to a string
     return (
         <div className="expense-item">
-            <h2>{expenseDate.toISOString()}</h2>
+            <h2>{props.date.toISOString()}</h2>
             <div className="expense-item__description">
-                <h2>{expenseTitle}</h2>
-                <h2 className="expense-item__price">{expenseAmount}</h2>
+                <h2>{props.title}</h2>
+                <h2 className="expense-item__price">{props.amount}</h2>
             </div>
         </div>
     )
