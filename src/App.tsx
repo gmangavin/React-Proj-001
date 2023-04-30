@@ -4,8 +4,8 @@ function App() {
 
   const expenses = [
     {date: new Date(2023, 4, 30), title: 'Energy Bill', amount: 231.45},
-    {date: new Date(2023, 4, 30), title: 'Water Bill', amount: 80.45},
-    {date: new Date(2023, 4, 30), title: 'Internet Bill', amount: 125.45},
+    {date: new Date(2023, 3, 18), title: 'Water Bill', amount: 80.45},
+    {date: new Date(2023, 1, 24), title: 'Internet Bill', amount: 125.45},
   ];
 
   return (
